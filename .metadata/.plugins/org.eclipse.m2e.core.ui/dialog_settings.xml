@@ -4,4 +4,25 @@
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="/Users/user/Downloads/Java-Final-Project-JobSearchingApplication-master"/>
+			<item value="/Users/user/Downloads/m0921-spring-pma-main"/>
+			<item value="/Users/user/Downloads/payroll manager application"/>
+			<item value="/Users/user/Downloads/spring-boot-example-sts"/>
+			<item value="/Users/user/Downloads/gs-relational-data-access-main"/>
+			<item value="/Users/user/Downloads/pharmacy"/>
+			<item value="/Users/user/Downloads/gs-scheduling-tasks-main"/>
+			<item value="/Users/user/Downloads/todo-management-spring-boot-master"/>
+			<item value="/Users/user/Documents/workspace-spring-tool-suite-4-4.12.1.RELEASE/final"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
 </section>

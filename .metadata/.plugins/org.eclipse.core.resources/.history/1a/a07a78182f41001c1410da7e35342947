@@ -1,8 +1,0 @@
-package com.example.springdemo.web;
-
-public class HelloController {
-	public String sayHello() {
-		return "Hello!";
-		}
-
-}

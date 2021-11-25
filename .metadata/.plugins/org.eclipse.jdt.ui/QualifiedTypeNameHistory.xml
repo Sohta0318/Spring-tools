@@ -5,8 +5,11 @@
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
     <fullyQualifiedTypeName name="com.example.springdemo.domain.Product"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
     <fullyQualifiedTypeName name="com.example.springdemo.domain.User"/>
     <fullyQualifiedTypeName name="org.apache.tomcat.jni.User"/>
     <fullyQualifiedTypeName name="com.spring.pma.dao.iProjectRepository"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+    <fullyQualifiedTypeName name="antlr.collections.List"/>
 </qualifiedTypeNameHistroy>

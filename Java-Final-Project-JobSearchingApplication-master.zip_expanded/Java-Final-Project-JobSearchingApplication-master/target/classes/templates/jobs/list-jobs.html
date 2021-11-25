@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head th:replace="layouts :: head"></head>
+  <body>
+  
+  	
+  	<nav class="l-nav">
+    	<a class="nav-link c-home-btn" href="/">HOME</a>
+    	<a class="nav-link c-list-btn" href="/jobs">LIST</a>
+    </nav >
+    
+    
+    <div class="container">
+    
+    	<h3>Jobs List</h3>
+    	<hr />
+    	
+    	<a 
+    		th:href="@{/jobs/new}"
+    		class="btn btn-primary btn-sm mb-3 new-btn"
+    	>Create new job</a>
+    	
+    	<table class="table table-bordered table-striped table-style">
+    		<thead class="thead-dark">
+    			<tr>
+    				<th>Job Title</th>
+    				<th>Company Name</th>
+    				<th>Location</th>
+    				<th>Description</th>
+    				<th>Skills</th>
+    				<th>Edit</th>
+    				
+    			</tr>
+    		</thead>
+    		<tbody>
+    			<tr th:each="field: ${jobList}">
+    				<td th:text="${field.title}"></td>
+    				<td th:text="${field.company}"></td>
+    				<td th:text="${field.location}"></td>
+    				<td th:text="${field.description}"></td>
+    				<td><a th:href="@{/jobs/skill/{skillName}(skillName=${field.skill})}" th:text="${field.skill}" /></td>
+    				<td><a th:href="@{/jobs/edit/{id}(id=${field.jobId})}" class="btn btn-primary btn-sm mb-3 edit-btn">Edit Job</a></td>
+    			</tr>
+    		</tbody>
+    	</table>
+    </div>
+    
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </body>
+</html>

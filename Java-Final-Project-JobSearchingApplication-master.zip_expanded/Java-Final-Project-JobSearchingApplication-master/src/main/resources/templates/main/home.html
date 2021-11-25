@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">	
+  <head th:replace="layouts :: head"></head>
+  <body>
+    
+    <div class="container home-container">
+    	<div class="l-head">
+    		<h1 class="l-head__title">GET YOUR FUTURE JOB!</h1> 
+    		<p class="l-head__pic"><img th:src="@{/image/pic01.png}" alt="pic"></p>
+    		<form id="name" action="#">
+    			<input type="text" id="input-message" placeholder="Enter your name">
+    			<input type="button" onclick="showMessage()" value="GO">
+  			</form>
+  			<p id="output-message" class="l-head__intro"></p>
+    	</div>
+    	<script language="javascript" type="text/javascript">
+    		const showMessage = () => {
+      		const textbox = document.getElementById("input-message");
+      		const inputValue = textbox.value;
+      		const output = "Welcome, " + inputValue + "!";
+      		document.getElementById("output-message").innerHTML = output;
+    		}
+  		</script>
+    	<div class="l-btn">
+    		<a href="/jobs">Let's create new Job!</a>
+    	</div>
+    	
+    </div>
+    
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script type="text/javascript" th:src="@{/js/chartdata.js}"></script>
+  </body>
+</html>
